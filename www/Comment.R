@@ -1,0 +1,1 @@
+display guess as character
