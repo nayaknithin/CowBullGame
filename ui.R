@@ -10,7 +10,7 @@ sidebarPanel(h2("CowBullGame"),
              ),
 mainPanel(
           h1("Score Tab"),
-          verbatimTextOutput("instructmessage"),
+          uiOutput("instructmessage"),
           tableOutput("scorecard"),
           verbatimTextOutput("winmessage")
           )
