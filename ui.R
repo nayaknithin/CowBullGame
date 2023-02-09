@@ -1,5 +1,5 @@
 # UI for the game
-ui <- fluidPage(
+ui <- fluidPage(theme=shinytheme("darkly"),
 tabsetPanel(tabPanel("Wiki",uiOutput("wikiUI")),
 tabPanel("Click here to play the Game",
 sidebarPanel(h2("CowBullGame"),

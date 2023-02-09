@@ -30,10 +30,11 @@ p("For each number you input u will get number of bulls and cows. Let's say the 
 
   #submit button
   observeEvent(input$submit,{
-    guessnumC=RepCheckFunc(strsplit(as.character(input$guessnum),"")[[1]])
+    guessnumC=strsplit(as.character(input$guessnum),"")[[1]]
     if(length(guessnumC)==3){guessnumC=c("0",guessnumC)}
     if(length(guessnumC)<3){guessnumC=NA}
     if(length(guessnumC)>4){guessnumC=guessnumC[1:4]}
+    guessnumC=RepCheckFunc(guessnumC)
     if(any(is.na(guessnumC))){pasteguessnumC=NA}else{
       pasteguessnumC=paste0(guessnumC,collapse = "")}
     inputlist$guess=c(inputlist$guess[!is.na(inputlist$guess)],pasteguessnumC)
