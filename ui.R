@@ -1,3 +1,4 @@
+# UI for the game
 ui <- fluidPage(
 tabsetPanel(tabPanel("Wiki",uiOutput("wikiUI")),
 tabPanel("Click here to play the Game",
